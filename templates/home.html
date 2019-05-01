@@ -4,6 +4,9 @@
 </head>
 <body>
 <h1>Headlines</h1>
+<form><input type="text" name="publication" placeholder="search" />
+<input type="submit" value="Submit" />
+</form>
 {% for article in articles %}
 <strong><a href="{{article.link}}">{{article.title}}</a></strong><br />
 <em>{{article.published}}</em><br />
